@@ -4,7 +4,7 @@ SELECT bill_date, bill_total FROM restBill WHERE cust_name = 'Bob Crow';
 
 -- 2
 
-SELECT cust_name FROM restBill WHERE cust_name LIKE '%Smith' ORDER BY DESC;
+SELECT DISTINCT cust_name FROM restBill WHERE cust_name LIKE '% Smith' ORDER BY cust_name DESC;
 
 -- 3
 
